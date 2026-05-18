@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDO REMIX MUSIC ID</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Arial, sans-serif;
+      background:linear-gradient(180deg,#090909,#111,#1a1a1a);
+      color:white;
+      padding:20px;
+    }
+
+    .container{
+      max-width:700px;
+      margin:auto;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:30px;
+    }
+
+    .title h1{
+      font-size:40px;
+      color:#ff00cc;
+      text-shadow:0 0 15px #ff00cc;
+    }
+
+    .title p{
+      color:#aaa;
+      margin-top:8px;
+    }
+
+    #search{
+      width:100%;
+      padding:14px;
+      border:none;
+      border-radius:12px;
+      margin-bottom:25px;
+      background:#1f1f1f;
+      color:white;
+      font-size:16px;
+      outline:none;
+    }
+
+    .song{
+      background:#161616;
+      border:1px solid #2b2b2b;
+      padding:18px;
+      border-radius:16px;
+      margin-bottom:15px;
+      transition:0.2s;
+    }
+
+    .song:hover{
+      transform:scale(1.02);
+      border-color:#ff00cc;
+      box-shadow:0 0 15px rgba(255,0,204,0.4);
+    }
+
+    .song h2{
+      font-size:22px;
+      margin-bottom:8px;
+    }
+
+    .song p{
+      color:#bbb;
+      margin-bottom:12px;
+    }
+
+    button{
+      background:#ff00cc;
+      color:white;
+      border:none;
+      padding:10px 18px;
+      border-radius:10px;
+      cursor:pointer;
+      font-weight:bold;
+      transition:0.2s;
+    }
+
+    button:hover{
+      background:#ff33d6;
+    }
+
+    .footer{
+      text-align:center;
+      margin-top:30px;
+      color:#666;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="title">
+    <h1>INDO REMIX</h1>
+    <p>Kumpulan kode lagu Roblox</p>
+  </div>
+
+  <input type="text" id="search" placeholder="Cari lagu...">
+
+  <div class="song">
+    <h2>Pergilah Kasih (Jungle Dutch)</h2>
+    <p>ID: 86096948961156</p>
+    <button onclick="copyCode('86096948961156')">COPY</button>
+  </div>
+
+  <div class="song">
+    <h2>Berlayar Tak Bertepian (Jungle Dutch)</h2>
+    <p>ID: 140133229908136</p>
+    <button onclick="copyCode('140133229908136')">COPY</button>
+  </div>
+
+  <div class="song">
+    <h2>Lumpuhkan Ingatanku (Jungle Dutch)</h2>
+    <p>ID: 98846736878692</p>
+    <button onclick="copyCode('98846736878692')">COPY</button>
+  </div>
+
+  <div class="song">
+    <h2>Salahmu Sendiri (Jungle Dutch)</h2>
+    <p>ID: 75207245378062</p>
+    <button onclick="copyCode('75207245378062')">COPY</button>
+  </div>
+
+  <div class="song">
+    <h2>Aku Rela (Jungle Dutch)</h2>
+    <p>ID: 95680549796990</p>
+    <button onclick="copyCode('95680549796990')">COPY</button>
+  </div>
+
+  <div class="song">
+    <h2>Aku Tak Biasa (Jungle Dutch)</h2>
+    <p>ID: 88404894714405</p>
+    <button onclick="copyCode('88404894714405')">COPY</button>
+  </div>
+
+  <div class="song">
+    <h2>Hapus Aku (Jungle Dutch)</h2>
+    <p>ID: 129115870601799</p>
+    <button onclick="copyCode('129115870601799')">COPY</button>
+  </div>
+
+  <div class="song">
+    <h2>Yang Tlah Merelakanmu (Jungle Dutch)</h2>
+    <p>ID: 104538695682889</p>
+    <button onclick="copyCode('104538695682889')">COPY</button>
+  </div>
+
+  <div class="song">
+    <h2>Scar (Jungle Dutch)</h2>
+    <p>ID: 101933073489858</p>
+    <button onclick="copyCode('101933073489858')">COPY</button>
+  </div>
+
+  <div class="footer">
+    Website by NaiO
+  </div>
+
+</div>
+
+<script>
+  function copyCode(code){
+    navigator.clipboard.writeText(code);
+    alert("Kode berhasil dicopy: " + code);
+  }
+
+  const search = document.getElementById("search");
+
+  search.addEventListener("keyup", function(){
+    const value = search.value.toLowerCase();
+    const songs = document.querySelectorAll(".song");
+
+    songs.forEach(song => {
+      const text = song.innerText.toLowerCase();
+
+      if(text.includes(value)){
+        song.style.display = "block";
+      } else {
+        song.style.display = "none";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
