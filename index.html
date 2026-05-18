@@ -9,95 +9,106 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background:#000;
-    color:white;
-    font-family:Arial,sans-serif;
-    padding:20px;
+font-family:Arial,sans-serif;
+background:
+radial-gradient(circle at top,#3b0066,#000);
+color:white;
+padding:20px;
+overflow-x:hidden;
 }
 
 .container{
-    max-width:800px;
-    margin:auto;
+max-width:900px;
+margin:auto;
 }
 
 .title{
-    text-align:center;
-    margin-bottom:30px;
+text-align:center;
+margin-bottom:35px;
 }
 
 .title h1{
-    font-size:42px;
-    color:#00ffcc;
-    text-shadow:0 0 15px #00ffcc;
+font-size:52px;
+color:#ff00ff;
+text-shadow:
+0 0 10px #ff00ff,
+0 0 20px #ff00ff,
+0 0 40px #ff00ff;
 }
 
 .title p{
-    color:#999;
-    margin-top:10px;
+color:#bbb;
+margin-top:10px;
+font-size:16px;
 }
 
 #search{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:12px;
-    background:#111;
-    color:white;
-    font-size:16px;
-    outline:none;
-    margin-bottom:25px;
-    border:1px solid #222;
+width:100%;
+padding:16px;
+border:none;
+outline:none;
+border-radius:15px;
+background:#111;
+color:white;
+font-size:16px;
+margin-bottom:25px;
+border:1px solid #333;
 }
 
 .song{
-    background:#111;
-    border:1px solid #222;
-    border-radius:15px;
-    padding:18px;
-    margin-bottom:15px;
-    transition:0.2s;
+background:rgba(20,20,20,0.92);
+border:1px solid #2d2d2d;
+border-radius:18px;
+padding:20px;
+margin-bottom:18px;
+transition:0.25s;
+box-shadow:0 0 15px rgba(255,0,255,0.08);
 }
 
 .song:hover{
-    border-color:#00ffcc;
-    transform:scale(1.02);
+transform:translateY(-4px) scale(1.01);
+border-color:#ff00ff;
+box-shadow:
+0 0 15px rgba(255,0,255,0.4),
+0 0 25px rgba(0,255,255,0.15);
 }
 
 .song h2{
-    color:#00ffcc;
-    font-size:20px;
-    margin-bottom:10px;
+font-size:22px;
+color:#00ffff;
+margin-bottom:10px;
 }
 
 .song p{
-    color:#bbb;
-    margin-bottom:15px;
+color:#ddd;
+margin-bottom:15px;
 }
 
 button{
-    background:#00ffcc;
-    color:black;
-    border:none;
-    padding:10px 18px;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:bold;
+background:linear-gradient(90deg,#ff00ff,#00ffff);
+border:none;
+padding:12px 22px;
+border-radius:12px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.2s;
 }
 
 button:hover{
-    opacity:0.8;
+transform:scale(1.05);
 }
 
 .footer{
-    text-align:center;
-    margin-top:30px;
-    color:#666;
+text-align:center;
+margin-top:35px;
+color:#777;
 }
 
 </style>
@@ -113,91 +124,7 @@ button:hover{
 
 <input type="text" id="search" placeholder="Search music...">
 
-<div class="song"><h2>ON And ON (Jungle Dutch)</h2><p>ID : 110584477217090</p><button onclick="copyCode('110584477217090')">COPY</button></div>
-
-<div class="song"><h2>Tie Me Down (Jungle Dutch)</h2><p>ID : 83771898266183</p><button onclick="copyCode('83771898266183')">COPY</button></div>
-
-<div class="song"><h2>The Second You Sleep (Jungle Dutch)</h2><p>ID : 133110351858891</p><button onclick="copyCode('133110351858891')">COPY</button></div>
-
-<div class="song"><h2>City Of Dream (Jungle Dutch)</h2><p>ID : 88470638421043</p><button onclick="copyCode('88470638421043')">COPY</button></div>
-
-<div class="song"><h2>Mood (Jungle Dutch)</h2><p>ID : 122291151079308</p><button onclick="copyCode('122291151079308')">COPY</button></div>
-
-<div class="song"><h2>Hislerim (Jungle Dutch)</h2><p>ID : 122291151079308</p><button onclick="copyCode('122291151079308')">COPY</button></div>
-
-<div class="song"><h2>Know Me Too Well (Jungle Dutch)</h2><p>ID : 96669034281258</p><button onclick="copyCode('96669034281258')">COPY</button></div>
-
-<div class="song"><h2>Basta Boy (Jungle Dutch)</h2><p>ID : 132652553718233</p><button onclick="copyCode('132652553718233')">COPY</button></div>
-
-<div class="song"><h2>Pergilah kasih (Jungle Dutch)</h2><p>ID : 86096948961156</p><button onclick="copyCode('86096948961156')">COPY</button></div>
-
-<div class="song"><h2>Berlayar Tak Bertepian (Jungle Dutch)</h2><p>ID : 140133229908136</p><button onclick="copyCode('140133229908136')">COPY</button></div>
-
-<div class="song"><h2>Lumpuhkan Ingatanku (Jungle Dutch)</h2><p>ID : 98846736878692</p><button onclick="copyCode('98846736878692')">COPY</button></div>
-
-<div class="song"><h2>Salahmu Sendiri (Jungle Dutch)</h2><p>ID : 75207245378062</p><button onclick="copyCode('75207245378062')">COPY</button></div>
-
-<div class="song"><h2>Aku Rela (Jungle Dutch)</h2><p>ID : 95680549796990</p><button onclick="copyCode('95680549796990')">COPY</button></div>
-
-<div class="song"><h2>Aku Tak Biasa (Jungle Dutch)</h2><p>ID : 88404894714405</p><button onclick="copyCode('88404894714405')">COPY</button></div>
-
-<div class="song"><h2>Hapus Aku (Jungle Dutch)</h2><p>ID : 129115870601799</p><button onclick="copyCode('129115870601799')">COPY</button></div>
-
-<div class="song"><h2>Yang Tlah Merelakanmu (Jungle Dutch)</h2><p>ID : 104538695682889</p><button onclick="copyCode('104538695682889')">COPY</button></div>
-
-<div class="song"><h2>Scar (Jungle Dutch)</h2><p>ID : 101933073489858</p><button onclick="copyCode('101933073489858')">COPY</button></div>
-
-<div class="song"><h2>I Dont Wanna Lose Control (Jungle Dutch)</h2><p>ID : 86836438310692</p><button onclick="copyCode('86836438310692')">COPY</button></div>
-
-<div class="song"><h2>MandarinXJedag Jedug PART 1 (REMIX)</h2><p>ID : 99336812228732</p><button onclick="copyCode('99336812228732')">COPY</button></div>
-
-<div class="song"><h2>MandarinXJedag Jedug PART 2 (REMIX)</h2><p>ID : 97511275245922</p><button onclick="copyCode('97511275245922')">COPY</button></div>
-
-<div class="song"><h2>MandarinXJedag Jedug PART 3 (REMIX)</h2><p>ID : 123035164772905</p><button onclick="copyCode('123035164772905')">COPY</button></div>
-
-<div class="song"><h2>Faja Skali (Original)</h2><p>ID : 121049343348989</p><button onclick="copyCode('121049343348989')">COPY</button></div>
-
-<div class="song"><h2>De Yang Gatal Gatal Sa (Original)</h2><p>ID : 113924251596667</p><button onclick="copyCode('113924251596667')">COPY</button></div>
-
-<div class="song"><h2>Jelaousy (ARABIC REMIX)</h2><p>ID : 117092572574735</p><button onclick="copyCode('117092572574735')">COPY</button></div>
-
-<div class="song"><h2>Malam Pagi (MALAY SONG)</h2><p>ID : 127193687170706</p><button onclick="copyCode('127193687170706')">COPY</button></div>
-
-<div class="song"><h2>Krna Su Sayang (Original)</h2><p>ID : 135249815046426</p><button onclick="copyCode('135249815046426')">COPY</button></div>
-
-<div class="song"><h2>Rindu Semalam (Original)</h2><p>ID : 73754633994935</p><button onclick="copyCode('73754633994935')">COPY</button></div>
-
-<div class="song"><h2>Otonoke DAN DAN DA (TECHNO)</h2><p>ID : 85622500744875</p><button onclick="copyCode('85622500744875')">COPY</button></div>
-
-<div class="song"><h2>Sa Stop Mabok (Original)</h2><p>ID : 102207684682382</p><button onclick="copyCode('102207684682382')">COPY</button></div>
-
-<div class="song"><h2>Yalla Yalle (Jungle Dutch)</h2><p>ID : 87419541648835</p><button onclick="copyCode('87419541648835')">COPY</button></div>
-
-<div class="song"><h2>Ferrari (Jungle Dutch)</h2><p>ID : 89341415337364</p><button onclick="copyCode('89341415337364')">COPY</button></div>
-
-<div class="song"><h2>Gelay (Original)</h2><p>ID : 137243980760926</p><button onclick="copyCode('137243980760926')">COPY</button></div>
-
-<div class="song"><h2>Jatah Mantan (Original)</h2><p>ID : 72707272183094</p><button onclick="copyCode('72707272183094')">COPY</button></div>
-
-<div class="song"><h2>Go Young Cop Low (Original)</h2><p>ID : 98136059108112</p><button onclick="copyCode('98136059108112')">COPY</button></div>
-
-<div class="song"><h2>Pratata Gra Ta Ta (Original)</h2><p>ID : 97199325212546</p><button onclick="copyCode('97199325212546')">COPY</button></div>
-
-<div class="song"><h2>Good Looking Vs Good Rekening (Original)</h2><p>ID : 122236265320287</p><button onclick="copyCode('122236265320287')">COPY</button></div>
-
-<div class="song"><h2>Frozen (Jungle Dutch)</h2><p>ID : 132189396640120</p><button onclick="copyCode('132189396640120')">COPY</button></div>
-
-<div class="song"><h2>Scared To Be Lonley (Jungle Dutch)</h2><p>ID : 87670779457620</p><button onclick="copyCode('87670779457620')">COPY</button></div>
-
-<div class="song"><h2>I Gotta Feeling (Jungle Dutch)</h2><p>ID : 77101875569022</p><button onclick="copyCode('77101875569022')">COPY</button></div>
-
-<div class="song"><h2>Bella Ciao (Jungle Dutch)</h2><p>ID : 102950608200868</p><button onclick="copyCode('102950608200868')">COPY</button></div>
-
-<div class="song"><h2>Mercy (Jungle Dutch)</h2><p>ID : 115754219304193</p><button onclick="copyCode('115754219304193')">COPY</button></div>
-
-<div class="song"><h2>Alan Walker - Not You (REMIX Jungle Dutch)</h2><p>ID : 139752089350393</p><button onclick="copyCode('139752089350393')">COPY</button></div>
-
-<div class="song"><h2>Here Without You (Jungle Remix)</h2><p>ID : 112588606293419</p><button onclick="copyCode('112588606293419')">COPY</button></div>
+<div id="songs"></div>
 
 <div class="footer">
 Website by NaiO
@@ -207,32 +134,99 @@ Website by NaiO
 
 <script>
 
-function copyCode(code){
-    navigator.clipboard.writeText(code);
-    alert("Copied : " + code);
+const songData = `
+
+ON And ON (Jungle Dutch)|110584477217090
+Tie Me Down (Jungle Dutch)|83771898266183
+The Second You Sleep (Jungle Dutch)|133110351858891
+City Of Dream (Jungle Dutch)|88470638421043
+Mood (Jungle Dutch)|122291151079308
+Hislerim (Jungle Dutch)|122291151079308
+Know Me Too Well (Jungle Dutch)|96669034281258
+Basta Boy (Jungle Dutch)|132652553718233
+Pergilah kasih (Jungle Dutch)|86096948961156
+Berlayar Tak Bertepian (Jungle Dutch)|140133229908136
+Lumpuhkan Ingatanku (Jungle Dutch)|98846736878692
+Salahmu Sendiri (Jungle Dutch)|75207245378062
+Aku Rela (Jungle Dutch)|95680549796990
+Aku Tak Biasa (Jungle Dutch)|88404894714405
+Hapus Aku (Jungle Dutch)|129115870601799
+Yang Tlah Merelakanmu (Jungle Dutch)|104538695682889
+Scar (Jungle Dutch)|101933073489858
+I Dont Wanna Lose Control (Jungle Dutch)|86836438310692
+MandarinXJedag Jedug PART 1 (REMIX)|99336812228732
+MandarinXJedag Jedug PART 2 (REMIX)|97511275245922
+MandarinXJedag Jedug PART 3 (REMIX)|123035164772905
+Faja Skali (Original)|121049343348989
+De Yang Gatal Gatal Sa (Original)|113924251596667
+Jelaousy (ARABIC REMIX)|117092572574735
+Malam Pagi (MALAY SONG)|127193687170706
+Krna Su Sayang (Original)|135249815046426
+Rindu Semalam (Original)|73754633994935
+Otonoke DAN DAN DA (TECHNO)|85622500744875
+Sa Stop Mabok (Original)|102207684682382
+Yalla Yalle (Jungle Dutch)|87419541648835
+Ferrari (Jungle Dutch)|89341415337364
+Gelay (Original)|137243980760926
+Jatah Mantan (Original)|72707272183094
+Go Young Cop Low (Original)|98136059108112
+Pratata Gra Ta Ta (Original)|97199325212546
+Good Looking Vs Good Rekening (Original)|122236265320287
+Frozen (Jungle Dutch)|132189396640120
+Scared To Be Lonley (Jungle Dutch)|87670779457620
+I Gotta Feeling (Jungle Dutch)|77101875569022
+Bella Ciao (Jungle Dutch)|102950608200868
+Mercy (Jungle Dutch)|115754219304193
+Alan Walker - Not You (REMIX Jungle Dutch)|139752089350393
+Here Without You (Jungle Remix)|112588606293419
+Your Love (Jungle Dutch HARD)|116694725292793
+Alive (Jungle Dutch)|97760946028290
+Dangdut Of The Music My County (Original)|106790860573074
+Bete (Dangdut)|92743121313174
+Emang Gua Pikirin (Dangdut)|111191482311154
+Cape Dech (Dangdut)|122940514807521
+Pok Ani Ani (Original)|80737091693264
+
+`;
+
+const songsContainer = document.getElementById("songs");
+
+function renderSongs(filter=""){
+
+songsContainer.innerHTML="";
+
+const songs = songData.trim().split("\n");
+
+songs.forEach(song=>{
+
+const [title,id]=song.split("|");
+
+if(title.toLowerCase().includes(filter.toLowerCase())){
+
+songsContainer.innerHTML += `
+<div class="song">
+<h2>${title}</h2>
+<p>ID : ${id}</p>
+<button onclick="copyCode('${id}')">COPY</button>
+</div>
+`;
+
 }
 
-const search = document.getElementById("search");
-
-search.addEventListener("keyup", function(){
-
-    const value = search.value.toLowerCase();
-
-    const songs = document.querySelectorAll(".song");
-
-    songs.forEach(song => {
-
-        const text = song.innerText.toLowerCase();
-
-        if(text.includes(value)){
-            song.style.display = "block";
-        }else{
-            song.style.display = "none";
-        }
-
-    });
-
 });
+
+}
+
+renderSongs();
+
+document.getElementById("search").addEventListener("keyup",e=>{
+renderSongs(e.target.value);
+});
+
+function copyCode(code){
+navigator.clipboard.writeText(code);
+alert("Copied : " + code);
+}
 
 </script>
 
